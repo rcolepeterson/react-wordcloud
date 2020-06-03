@@ -1,12 +1,12 @@
-import debounce from 'lodash.debounce';
-import React, { useEffect, useRef } from 'react';
+import debounce from "lodash.debounce";
+import React, { useEffect, useRef } from "react";
 
-import { useResponsiveSvgSelection } from './hooks';
-import { layout } from './layout';
-import { getDefaultColors } from './utils';
+import { useResponsiveSvgSelection } from "./hooks";
+import { layout } from "./layout";
+import { getDefaultColors } from "./utils";
 
-import 'tippy.js/dist/tippy.css'; // eslint-disable-line import/extensions
-import 'tippy.js/animations/scale.css'; // eslint-disable-line import/extensions
+//import 'tippy.js/dist/tippy.css'; // eslint-disable-line import/extensions
+//import 'tippy.js/animations/scale.css'; // eslint-disable-line import/extensions
 
 export const defaultCallbacks = {
 	getWordTooltip: ({ text, value }) => `${text} (${value})`,
@@ -17,14 +17,14 @@ export const defaultOptions = {
 	deterministic: false,
 	enableOptimizations: false,
 	enableTooltip: true,
-	fontFamily: 'times new roman',
+	fontFamily: "times new roman",
 	fontSizes: [4, 32],
-	fontStyle: 'normal',
-	fontWeight: 'normal',
+	fontStyle: "normal",
+	fontWeight: "normal",
 	padding: 1,
 	rotationAngles: [-90, 90],
-	scale: 'sqrt',
-	spiral: 'rectangular',
+	scale: "sqrt",
+	spiral: "rectangular",
 	transitionDuration: 600,
 };
 
@@ -59,7 +59,7 @@ function ReactWordCloud({
 		}
 	}, [maxWords, mergedCallbacks, mergedOptions, selection, size, words]);
 
-	return <div ref={ref} style={{ height: '100%', width: '100%' }} />;
+	return <div ref={ref} style={{ height: "100%", width: "100%" }} />;
 }
 
 ReactWordCloud.defaultProps = {
