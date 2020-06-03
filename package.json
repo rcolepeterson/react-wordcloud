@@ -1,5 +1,5 @@
 {
-	"name": "react-wordcloud",
+	"name": "react-wordcloud-cpeterson",
 	"version": "1.2.3",
 	"description": "Simple React + D3 wordcloud component with powerful features.",
 	"main": "dist/index.js",
@@ -89,7 +89,7 @@
 			"xo-react"
 		],
 		"rules": {
-      "@typescript-eslint/prefer-readonly-parameter-types": "off",
+			"@typescript-eslint/prefer-readonly-parameter-types": "off",
 			"import/no-unassigned-import": "off",
 			"react/function-component-definition": "off",
 			"react/prop-types": "off"
